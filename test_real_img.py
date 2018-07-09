@@ -1,5 +1,6 @@
 import numpy as np
 import os
+import argparse
 import cv2
 import sys
 import tarfile
@@ -14,8 +15,13 @@ from PIL import Image
 from utils import label_map_util
 from utils import visualization_utils as vis_util
 
-TEST_PATH = "./test_data_zhenghao_1/"
-SAVE_PATH = "./result"
+parser = argparse.ArgumentParser()
+parser.add_argument("test_name", help="Name of the test folder.")
+args = parser.parse_args()
+
+TEST_NAME = args.test_name
+TEST_PATH = os.path.join("./test_data/", TEST_NAME)
+SAVE_PATH = "./result/result_" + TEST_NAME
 
 if not os.path.exists(SAVE_PATH):
     os.makedirs(SAVE_PATH)
