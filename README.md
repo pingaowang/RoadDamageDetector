@@ -1,8 +1,8 @@
 # RoadDamageDetector
 ## Test the real image:
 python test_real_img.py [name_test]
-The testing image folder is at ./test_data/[name_test]
-Find the result at ./result/result_[name_test]
+\n The testing image folder is at ./test_data/[name_test]
+\n Find the result at ./result/result_[name_test]
 
 ## News
 Road damage detection and classification challenge (one of the IEEE Bigdata Cup Challenge) is underway. Please confirm [here](https://bdc2018.mycityreport.net/)! The registration is up to June 11.
